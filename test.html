@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>FOggPlayer</title>
+  </head>
+  <body bgcolor="#dddddd">
+    <object width="350"
+	    height="21"
+	    id="player"
+	    classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+      <param name="movie"
+	     value="FOggPlayer.swf?url=interlude1.ogg&title=Interlude 1&start=true&volume=75&external=true">
+      <embed src="FOggPlayer.swf?url=interlude1.ogg&title=Interlude 1&start=true&volume=75&external=true"
+	     name="player"
+	     width="350"
+	     height="21"
+	     type="application/x-shockwave-flash">
+      </embed>
+    </object>
+    <br>
+    <button type="button" onclick="player.start(null)">Start</button>
+    <button type="button" onclick="player.pause(null)">Pause</button>
+    <button type="button" onclick="player.cease(null)">Stop</button>
+    <br>
+    Volume: <input type="text" value="75" size="6"
+		   onchange="player.volume(value)"> (0-100)
+    <p>(You may need to click here or press [Enter] to change the
+      volume)</p>
+    <p style="width: 60%"><strong>NOTE:</strong> The html used in this
+      page has been tested in current versions of Firefox, Chrome,
+      IE7, IE8, IE9 and Safari. That does not mean it will necessarily
+      work in other web browsers.</p>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>FOggPlayer</title>
+
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+    <meta name="author" content="Bill Farmer" />
+    <meta name="keywords" content="FOggPlayer" />
+    <meta name="description" content="FOggPlayer" />
+
+    <meta name="language" content="en" />
+    <meta name="publisher" content="Bill Farmer" />
+    <meta name="title" content="FOggPlayer" />
+  </head>
+
+  <body style="color: darkblue; background: aqua">
+    <div style="margin: 4%; padding-left: 5px; padding-left: 5px;
+		padding-bottom: 5px; width:60%; background: white;
+		font-family: sans-serif; font-size: 12pt;">
+      <h1>FOggPlayer</h1>
+      <p>Experimental simple Flash Ogg Vorbis player using HaXe Ogg
+      Vorbis library from xiph.org. Requires Flash player 10.0.0.525
+      or later.</p>
+      <object width="350"
+	      height="21"
+	      id="player"
+	      classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+	<param name="movie"
+	       value="FOggPlayer.swf?url=interlude1.ogg&title=Interlude 1&volume=75&external=true" />
+	<embed src="FOggPlayer.swf?url=interlude1.ogg&title=Interlude 1&volume=75&external=true"
+	       name="player"
+	       width="350"
+	       height="21"
+	       type="application/x-shockwave-flash" />
+      </object>
+      <br />
+      <h4>HTML external interface</h4>
+      <button type="button" onclick="player.Start(null)">Start</button>
+      <button type="button" onclick="player.Pause(null)">Pause</button>
+      <button type="button" onclick="player.Cease(null)">Stop</button>
+      <br />
+      Volume: <input type="text" value="75" size="6"
+		     onchange="player.Volume(value)" />
+      (0-100)
+
+      <p>(You may need to click here or press [Enter] to change the
+      volume)</p>
+
+      <p>To use this interface on your local file system you will need
+	to change your global security settings to trust the folder where
+	you want to keep the files. Visit
+	<a href="http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html">
+	  this page</a> to change your settings.</p>
+
+      <h4>Users</h4>
+      <a href="http://sourceforge.net/project/platformdownload.php?group_id=252838">Download FOggPlayer files</a>
+      <br />
+      <a href="http://sourceforge.net/projects/foggplayer">Project detail</a>
+      <h4>Developers</h4>
+      <a href="http://sourceforge.net/projects/foggplayer">Project summmary page</a>
+      <br /><br /><br />
+      <a href="http://sourceforge.net/projects/foggplayer">
+	<img src="http://sflogo.sourceforge.net/sflogo.php?group_id=252838&type=15" width="150" height="40" border="0" alt="Get FOggPlayer at SourceForge.net. Fast, secure and Free Open Source software downloads" />
+      </a>
+    </div>
+  </body>
+</html>
